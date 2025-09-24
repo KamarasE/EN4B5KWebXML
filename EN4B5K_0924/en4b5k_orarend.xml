@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE EN4B5K_orarend SYSTEM "en4b5k_orarend.dtd">
+
+<EN4B5K_orarend>
+    <ora id="0" típus="elmelet">
+        <targy> Mobil programozási alapok</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>16:00</tol>
+            <ig>18:00</ig>
+        </idopont>
+        <helyszin>L101</helyszin>
+        <oktato>Dr. Agárdi Anita </oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    
+    <ora id="1" típus="gyakorlat">
+        <targy> Mobil programozási alapok</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>18:00</tol>
+            <ig>20:00</ig>
+        </idopont>
+        <helyszin>L101</helyszin>
+        <oktato>Dr. Agárdi Anita </oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+
+    <ora id="2" típus="elmelet">
+        <targy> Adatkelezlés XML-ben</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>8:00</tol>
+            <ig>10:00</ig>
+        </idopont>
+        <helyszin>T050</helyszin>
+        <oktato>Dr. Kovács László József</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+
+    <ora id="3" típus="gyakorlat">
+        <targy> Adatkelezlés XML-ben</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>L103</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+
+    <ora id="4" típus="CV">
+        <targy> Adatbázisrendszerek II.</targy>
+        <oktato>Dr. Kovács László József</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    <ora id="5" típus="CV">
+        <targy> Fizika II.</targy>
+        <oktato>Nagy Ádám</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    <ora id="4" típus="CV">
+        <targy> Oracle rendszergazda</targy>
+        <oktato>Dr. Kovács László József</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+</EN4B5K_orarend>
