@@ -2,4 +2,16 @@
 
 <!ELEMENT EN4B5K_orarend (ora*)>
 
-<!ELEMENT ora (targy+,idopont+,helyszin+,oktato+,szak+)>
+
+<!ELEMENT ora (targy, idopont?, helyszin?, oktato, szak)>
+<!ATTLIST ora  id ID #REQUIRED típus (elmelet | gyakorlat | CV) "CV">
+
+<!ELEMENT targy    (#PCDATA)>
+<!ELEMENT helyszin (#PCDATA)>
+<!ELEMENT oktato   (#PCDATA)>
+<!ELEMENT szak     (#PCDATA)> 
+
+<!ELEMENT idopont (nap, tol, ig)>
+<!ELEMENT nap (#PCDATA)>
+<!ELEMENT tol (#PCDATA)>
+<!ELEMENT ig  (#PCDATA)>

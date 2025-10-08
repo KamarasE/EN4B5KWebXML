@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE EN4B5K_orarend SYSTEM "en4b5k_orarend.dtd">
+<?xml-model href="en4b5k_orarend.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 
-<EN4B5K_orarend>
+<orarend>
     <ora id="o0" típus="elmelet">
         <targy> Mobil programozási alapok</targy>
         <idopont>
-            <nap>Hétfő</nap>
-            <tol>16:00</tol>
-            <ig>18:00</ig>
+            <nap>hétfő</nap>
+            <tol>16</tol>
+            <ig>18</ig>
         </idopont>
         <helyszin>L101</helyszin>
         <oktato>Dr. Agárdi Anita </oktato>
@@ -18,9 +18,9 @@
     <ora id="o1" típus="gyakorlat">
         <targy> Mobil programozási alapok</targy>
         <idopont>
-            <nap>Hétfő</nap>
-            <tol>18:00</tol>
-            <ig>20:00</ig>
+            <nap>hétfő</nap>
+            <tol>18</tol>
+            <ig>20</ig>
         </idopont>
         <helyszin>L101</helyszin>
         <oktato>Dr. Agárdi Anita </oktato>
@@ -30,9 +30,9 @@
     <ora id="o2" típus="elmelet">
         <targy> Adatkelezlés XML-ben</targy>
         <idopont>
-            <nap>Szerda</nap>
-            <tol>8:00</tol>
-            <ig>10:00</ig>
+            <nap>szerda</nap>
+            <tol>8</tol>
+            <ig>10</ig>
         </idopont>
         <helyszin>T050</helyszin>
         <oktato>Dr. Kovács László József</oktato>
@@ -42,9 +42,9 @@
     <ora id="o3" típus="gyakorlat">
         <targy> Adatkelezlés XML-ben</targy>
         <idopont>
-            <nap>Szerda</nap>
-            <tol>10:00</tol>
-            <ig>12:00</ig>
+            <nap>szerda</nap>
+            <tol>10</tol>
+            <ig>12</ig>
         </idopont>
         <helyszin>L103</helyszin>
         <oktato>Dr. Bednarik László</oktato>
@@ -66,4 +66,4 @@
         <oktato>Dr. Kovács László József</oktato>
         <szak>Mérnökinformatika</szak>
     </ora>
-</EN4B5K_orarend>
+</orarend>
