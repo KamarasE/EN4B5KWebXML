@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="unqualified">
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-    <xs:element name="orarend">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="ora" type="oraTípus" minOccurs="0" maxOccurs="unbounded"></xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:complexType name="oraTípus">
-        <xs:sequence>
-            <xs:element name="targy" type="xs:string"></xs:element>
-            <xs:element name="idopont" type="xs:idopontTípus"></xs:element>
-            <xs:element name="helyszin" type="xs:string"></xs:element>
-            <xs:element name="oktato" type="xs:string"></xs:element>
-            <xs:element name="szak" type="xs:string"></xs:element>
-            
-        </xs:sequence>
-        <xs:attribute name="id"></xs:attribute>
-        <xs:attribute name="típus" type="oraTípusTípus" default="elmelet"></xs:attribute>
+  <xs:element name="orarend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ora" type="oraTípus" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
     </xs:complexType>
+  </xs:element>
 
-    <xs:simpleType name="oraTípusTípus">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="elmelet"></xs:enumeration>
-            <xs:enumeration value="gyakorlat"></xs:enumeration>
-            <xs:enumeration value="CV"></xs:enumeration>
-        </xs:restriction>
-    </xs:simpleType>
+  <xs:complexType name="oraTípus">
+    <xs:sequence>
+      <xs:element name="targy" type="xs:string"/>
+      <xs:element name="idopont" type="idopontTípus" minOccurs="0"/>
+      <xs:element name="helyszin" type="xs:string" minOccurs="0"/>
+      <xs:element name="oktato" type="xs:string"/>
+      <xs:element name="szak" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attribute name="típus" type="oraTípusTípus" use="optional" default="elmelet"/>
+  </xs:complexType>
 
-    <xs:simpleType name="napTípus">
-        <xs:restriction base="xs:string">
-        <xs:enumeration value="hétfő"></xs:enumeration>
-        <xs:enumeration value="kedd"></xs:enumeration>
-        <xs:enumeration value="szerda"></xs:enumeration>
-        <xs:enumeration value="csütörtök"></xs:enumeration>
-        <xs:enumeration value="péntek"></xs:enumeration>
-        </xs:restriction>
-    </xs:simpleType>
+  <xs:simpleType name="oraTípusTípus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="elmelet"/>
+      <xs:enumeration value="gyakorlat"/>
+      <xs:enumeration value="CV"/>
+    </xs:restriction>
+  </xs:simpleType>
 
-    <xs:complexType name="idopontTípus">
-        <xs:sequence>
-            <xs:element name="nap" type="napTípus"></xs:element>
-            <xs:element name="tol" type="idopontOraTípus"></xs:element>
-            <xs:element name="ig" type="idopontOraTípus"></xs:element>
-        </xs:sequence>
-    </xs:complexType>
+  <xs:simpleType name="napTípus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="hétfő"/>
+      <xs:enumeration value="kedd"/>
+      <xs:enumeration value="szerda"/>
+      <xs:enumeration value="csütörtök"/>
+      <xs:enumeration value="péntek"/>
+    </xs:restriction>
+  </xs:simpleType>
 
-    <xs:simpleType name="idopontOraTípus">
-        <xs:restriction base="xs:positiveInteger">
-        <xs:minInclusive value="8"></xs:minInclusive>
-        <xs:maxInclusive value="18"></xs:maxInclusive>
-        </xs:restriction>
-    </xs:simpleType>
+  <xs:complexType name="idopontTípus">
+    <xs:sequence>
+      <xs:element name="nap" type="napTípus"/>
+      <xs:element name="tol" type="idopontOraTípus"/>
+      <xs:element name="ig" type="idopontOraTípus"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="idopontOraTípus">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:minInclusive value="8"/>
+      <xs:maxInclusive value="20"/>
+    </xs:restriction>
+  </xs:simpleType>
 
 </xs:schema>

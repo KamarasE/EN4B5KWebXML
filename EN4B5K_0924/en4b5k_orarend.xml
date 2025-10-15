@@ -28,7 +28,7 @@
     </ora>
 
     <ora id="o2" típus="elmelet">
-        <targy> Adatkelezlés XML-ben</targy>
+        <targy> Adatkelezelés XML-ben</targy>
         <idopont>
             <nap>Szerda</nap>
             <tol>8:00</tol>
@@ -40,7 +40,7 @@
     </ora>
 
     <ora id="o3" típus="gyakorlat">
-        <targy> Adatkelezlés XML-ben</targy>
+        <targy> Adatkelezelés XML-ben</targy>
         <idopont>
             <nap>Szerda</nap>
             <tol>10:00</tol>

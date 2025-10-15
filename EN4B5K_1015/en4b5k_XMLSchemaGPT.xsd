@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <!-- Common simple types -->
+  <xs:simpleType name="CsillagType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DatumPontType">
+    <!-- Matches e.g. 2024.10.08 -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{4}\.\d{2}\.\d{2}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Address -->
+  <xs:complexType name="CimType">
+    <xs:sequence>
+      <xs:element name="varos" type="xs:string"/>
+      <xs:element name="utca" type="xs:string"/>
+      <xs:element name="hazszam" type="xs:positiveInteger"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Entities -->
+  <xs:complexType name="EtteremType">
+    <xs:sequence>
+      <xs:element name="nev" type="xs:string"/>
+      <xs:element name="cim" type="CimType"/>
+      <xs:element name="csillag" type="CsillagType"/>
+    </xs:sequence>
+    <xs:attribute name="ekod" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="FoszakacsType">
+    <xs:sequence>
+      <xs:element name="nev" type="xs:string"/>
+      <xs:element name="eletkor" type="xs:positiveInteger"/>
+      <xs:element name="vegzettseg" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="fkod" type="xs:ID" use="required"/>
+    <!-- references an Etterem ekod -->
+    <xs:attribute name="E-F" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="SzakacsType">
+    <xs:sequence>
+      <xs:element name="nev" type="xs:string"/>
+      <xs:element name="reszleg" type="xs:string"/>
+      <xs:element name="vegzettseg" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="szkod" type="xs:ID" use="required"/>
+    <!-- references an Etterem ekod -->
+    <xs:attribute name="E-Sz" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="GyakorlatType">
+    <xs:sequence>
+      <xs:element name="kezdete" type="DatumPontType"/>
+      <xs:element name="idotartama" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="GyakornokType">
+    <xs:sequence>
+      <xs:element name="nev" type="xs:string"/>
+      <xs:element name="gyakorlat" type="GyakorlatType"/>
+      <xs:element name="muszak" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="gykod" type="xs:ID" use="required"/>
+    <!-- references an Etterem ekod -->
+    <xs:attribute name="E-GY" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="VendegType">
+    <xs:sequence>
+      <xs:element name="nev" type="xs:string"/>
+      <xs:element name="cim" type="CimType"/>
+      <xs:element name="eletkor" type="xs:positiveInteger"/>
+    </xs:sequence>
+    <xs:attribute name="vkod" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="RendelesType">
+    <xs:sequence>
+      <xs:element name="nev" type="xs:string"/>
+      <xs:element name="etel" type="xs:string"/>
+    </xs:sequence>
+    <!-- e_v_e references a Vendeg vkod; e_v_v references an Etterem ekod -->
+    <xs:attribute name="e_v_e" type="xs:IDREF" use="required"/>
+    <xs:attribute name="e_v_v" type="xs:IDREF" use="required"/>
+  </xs:complexType>
+
+  <!-- Root element allowing any order and repetition -->
+  <xs:element name="en4b5k_vendeglatas">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="etterem" type="EtteremType"/>
+        <xs:element name="foszakacs" type="FoszakacsType"/>
+        <xs:element name="szakacs" type="SzakacsType"/>
+        <xs:element name="gyakornok" type="GyakornokType"/>
+        <xs:element name="vendeg" type="VendegType"/>
+        <xs:element name="rendeles" type="RendelesType"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
