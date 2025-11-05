@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hallgatok xmlns="DOMEN4B5K">
+    <hallgato id="1">
+        <keresztnev>Peter</keresztnev>
+        <vezeteknev>Nagy</vezeteknev>
+        <foglalkozas>Web Developer</foglalkozas>
+    </hallgato>
+    <hallgato id="2">
+        <keresztnev>Piroska</keresztnev>
+        <vezeteknev>Vigh</vezeteknev>
+        <foglalkozas>Java programozo</foglalkozas>
+    </hallgato>
+    <hallgato id="3">
+        <keresztnev>Ferenc</keresztnev>
+        <vezeteknev>Kiss</vezeteknev>
+        <foglalkozas>Associate professor</foglalkozas>
+    </hallgato>
+</hallgatok>

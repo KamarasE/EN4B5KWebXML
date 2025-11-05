@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="en4b5k_orarend.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<orarend>
+    <ora id="o0" típus="elmelet">
+        <targy> Mobil programozási alapok</targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>L101</helyszin>
+        <oktato>Dr. Agárdi Anita </oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    
+    <ora id="o1" típus="gyakorlat">
+        <targy> Mobil programozási alapok</targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>18</tol>
+            <ig>20</ig>
+        </idopont>
+        <helyszin>L101</helyszin>
+        <oktato>Dr. Agárdi Anita </oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+
+    <ora id="o2" típus="elmelet">
+        <targy> Adatkelezelés XML-ben</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>8</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>T050</helyszin>
+        <oktato>Dr. Kovács László József</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+
+    <ora id="o3" típus="gyakorlat">
+        <targy> Adatkelezelés XML-ben</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>L103</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+
+    <ora id="o4" típus="CV">
+        <targy> Adatbázisrendszerek II.</targy>
+        <oktato>Dr. Kovács László József</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    <ora id="o5" típus="CV">
+        <targy> Fizika II.</targy>
+        <oktato>Nagy Ádám</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+    <ora id="o6" típus="CV">
+        <targy> Oracle rendszergazda</targy>
+        <oktato>Dr. Kovács László József</oktato>
+        <szak>Mérnökinformatika</szak>
+    </ora>
+</orarend>
