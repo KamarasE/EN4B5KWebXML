@@ -1,0 +1,79 @@
+{
+	"EN4B5K_orarend": {
+		"ora": [
+			{
+				"targy": "Mobil programozási alapok",
+				"idopont": {
+					"nap": "Hétfő",
+					"tol": "16:00",
+					"ig": "18:00"
+				},
+				"helyszin": "L101",
+				"oktato": "Dr. Agárdi Anita",
+				"szak": "Mérnökinformatika",
+				"_id": "o0",
+				"_típus": "elmelet"
+			},
+			{
+				"targy": "Mobil programozási alapok",
+				"idopont": {
+					"nap": "Hétfő",
+					"tol": "18:00",
+					"ig": "20:00"
+				},
+				"helyszin": "L101",
+				"oktato": "Dr. Agárdi Anita",
+				"szak": "Mérnökinformatika",
+				"_id": "o1",
+				"_típus": "gyakorlat"
+			},
+			{
+				"targy": "Adatkelezelés XML-ben",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "8:00",
+					"ig": "10:00"
+				},
+				"helyszin": "T050",
+				"oktato": "Dr. Kovács László József",
+				"szak": "Mérnökinformatika",
+				"_id": "o2",
+				"_típus": "elmelet"
+			},
+			{
+				"targy": "Adatkelezelés XML-ben",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "10:00",
+					"ig": "12:00"
+				},
+				"helyszin": "L103",
+				"oktato": "Dr. Bednarik László",
+				"szak": "Mérnökinformatika",
+				"_id": "o3",
+				"_típus": "gyakorlat"
+			},
+			{
+				"targy": "Adatbázisrendszerek II.",
+				"oktato": "Dr. Kovács László József",
+				"szak": "Mérnökinformatika",
+				"_id": "o4",
+				"_típus": "CV"
+			},
+			{
+				"targy": "Fizika II.",
+				"oktato": "Nagy Ádám",
+				"szak": "Mérnökinformatika",
+				"_id": "o5",
+				"_típus": "CV"
+			},
+			{
+				"targy": "Oracle rendszergazda",
+				"oktato": "Dr. Kovács László József",
+				"szak": "Mérnökinformatika",
+				"_id": "o6",
+				"_típus": "CV"
+			}
+		]
+	}
+}
