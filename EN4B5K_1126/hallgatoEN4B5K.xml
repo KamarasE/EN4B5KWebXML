@@ -1,0 +1,22 @@
+<class>
+    <student id = "01">
+        <vezeteknev>Kamarás</vezeteknev>
+        <keresztnev>Erik</keresztnev>
+        <kor>22</kor>
+        <osztondij>29000</osztondij>
+    </student>
+
+    <student id = "02">
+        <vezeteknev>Paprika</vezeteknev>
+        <keresztnev>Jancsi</keresztnev>
+        <kor>35</kor>
+        <osztondij>10000</osztondij>
+    </student>
+
+    <student id = "03">
+        <vezeteknev>Kukor</vezeteknev>
+        <keresztnev>Ica</keresztnev>
+        <kor>25</kor>
+        <osztondij>30000</osztondij>
+    </student>
+</class>

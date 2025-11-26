@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h2>Hallgatok adatai - for-each, value-of</h2>
+        <table border="4" bgcolor="cyan">
+            <tr>
+                <th>ID</th><th>Vezeteknev</th><th>Keresztnev</th><th>Becenev</th><th>Kor</th><th>Osztondij</th>
+            </tr>
+        <tr>
+            <td>01</td><td>Kamarás</td><td>Erik</td><td></td><td>22</td><td>29000</td>
+        </tr>
+        <tr>
+            <td>02</td><td>Paprika</td><td>Jancsi</td><td></td><td>35</td><td>10000</td>
+        </tr>
+        <tr>
+            <td>03</td><td>Kukor</td><td>Ica</td><td></td><td>25</td><td>30000</td>
+        </tr>
+        </table>
+    </body>
+</html>
