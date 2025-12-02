@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kórház xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+ xs:noNamespaceSchemaLocation="EN4B5K_XMLSchema.xsd">
+
+<!--Betegek-->
+
+
+<beteg Bid="10" hozzátartozó="100" ellátás="1000">
+    <név>Kiss Ernő</név>
+    <lakcím>Görömböly</lakcím>
+    <születési_dátum>1982-11-11</születési_dátum>
+    <neme>M</neme>
+</beteg>
+<beteg Bid="11" hozzátartozó="110" ellátás="1001">
+    <név>Nagy Anna</név>
+    <lakcím>Bükkaranyos</lakcím>
+    <születési_dátum>1976-11-08</születési_dátum>
+    <neme>F</neme>
+</beteg>
+<beteg Bid="12" hozzátartozó="120" ellátás="1002">
+    <név>Szép Roland</név>
+    <lakcím>Miskolc</lakcím>
+    <születési_dátum>1998-02-04</születési_dátum>
+    <neme>M</neme>
+</beteg>
+<beteg Bid="13" hozzátartozó="120" ellátás="1003">
+    <név>Szép Anita</név>
+    <lakcím>Mályi</lakcím>
+    <születési_dátum>1999-01-06</születési_dátum>
+    <neme>F</neme>
+</beteg>
+
+<!--ellátás adatok-->
+<ellátás Eid="1000">
+    <időtartam>2016-09-01</időtartam>
+    <típus>sürgős</típus>
+    <jogviszony>fizetős</jogviszony>
+</ellátás>
+<ellátás Eid="1001">
+    <időtartam>2015-09-01</időtartam>
+    <típus>nem sürgős</típus>
+    <jogviszony>állami</jogviszony>
+</ellátás>
+<ellátás Eid="1002">
+    <időtartam>2013-09-01</időtartam>
+    <típus>nem sűrgős</típus>
+    <jogviszony>állami</jogviszony>
+</ellátás>
+<ellátás Eid="1003">
+    <időtartam>2013-09-01</időtartam>
+    <típus>sügrős</típus>
+    <jogviszony>állami</jogviszony>
+</ellátás>
+
+<!--hozzátartozók-->
+<hozzátartozó Hid="100">
+    <név>Kiss Ádám</név>
+    <kapcsolat>Szülő</kapcsolat>
+    <elérhetőség>
+        <telefonszám>+36306060769</telefonszám>
+        <email>adamkiss@gmail.com</email>
+        <email>kissadam@citromail.hu</email>
+    </elérhetőség>
+</hozzátartozó>
+<hozzátartozó Hid="110">
+    <név>Nagy Éva</név>
+    <kapcsolat>Gyermek</kapcsolat>
+    <elérhetőség>
+        <telefonszám>+36201234987</telefonszám>
+        <email>n.eva.dies@gmail.com</email>
+    </elérhetőség>
+</hozzátartozó>
+<hozzátartozó Hid="120">
+    <név>Komly János</név>
+    <kapcsolat>Szülő</kapcsolat>
+    <elérhetőség>
+        <telefonszám>+36706969696</telefonszám>
+        <email>komjancsi@kommail.hu</email>
+        <email>jancsi.komoly@gmail.com</email>
+        <email>jancsika@freemail.com</email>
+    </elérhetőség>
+</hozzátartozó>
+<!--Szakrendelések-->
+<szakrendelés Szid="1200" Oid="1100">
+    <panasz>láz</panasz>
+    <diagnózis>Felső légúti fertőzés</diagnózis>
+    <időpont>
+        <dátum>2025-10-30</dátum>
+        <kezdete>12</kezdete>
+        <vége>13</vége>
+    </időpont>
+</szakrendelés>
+<szakrendelés Szid="1201" Oid="1100">
+    <panasz>fájdalom</panasz>
+    <diagnózis>Vírusfertőzés</diagnózis>
+    <időpont>
+        <dátum>2025-10-15</dátum>
+        <kezdete>9</kezdete>
+        <vége>10</vége>
+    </időpont>
+</szakrendelés>
+<szakrendelés Szid="1202" Oid="1101">
+    <panasz>hasi fájdalom</panasz>
+    <panasz>fájdalmas vizelés</panasz>
+    <diagnózis>hólyaggyulladás</diagnózis>
+    <időpont>
+        <dátum>2025-09-02</dátum>
+        <kezdete>12</kezdete>
+        <vége>13</vége>
+    </időpont>
+</szakrendelés>
+<szakrendelés Szid="1203" Oid="1102">
+    <panasz>torok fájdalom</panasz>
+    <diagnózis>mandulagyulladás</diagnózis>
+    <időpont>
+        <dátum>2025-11-25</dátum>
+        <kezdete>11</kezdete>
+        <vége>12</vége>
+    </időpont>
+</szakrendelés>
+
+<!--Részvételi adatok-->
+<részvétel beteg="10" szakrendelés="1200">
+    <elégedettség>5</elégedettség>
+    <terápia>antihisztamin</terápia>
+</részvétel>
+<részvétel beteg="10" szakrendelés="1201">
+    <elégedettség>4</elégedettség>
+    <terápia>antibiotikum</terápia>
+</részvétel>
+<részvétel beteg="11" szakrendelés="1201">
+    <elégedettség>5</elégedettség>
+    <terápia>NSAID</terápia>
+</részvétel>
+<részvétel beteg="12" szakrendelés="1200">
+    <elégedettség>2</elégedettség>
+</részvétel>
+<részvétel beteg="12" szakrendelés="1202">
+    <elégedettség>3</elégedettség>
+</részvétel>
+<részvétel beteg="13" szakrendelés="1203">
+    <elégedettség>5</elégedettség>
+    <terápia>fájdalomcsillapító</terápia>
+</részvétel>
+
+<!--orvosok-->
+<orvos Oid="1100">
+    <név>Takács Imre</név>
+    <szakterület>Sebész</szakterület>
+    <fizetés>500000</fizetés>
+    <elérhetőség>
+        <telefonszám>+36702525252</telefonszám>
+        <email>t.i@gmail.com</email>
+    </elérhetőség>
+</orvos>
+<orvos Oid="1101">
+    <név>Kovács Kálmán</név>
+    <szakterület>Belgyógyász</szakterület>
+    <fizetés>250000</fizetés>
+    <elérhetőség>
+        <telefonszám>+36303636363</telefonszám>
+        <email>kovka@gmail.com</email>
+        <email>kovacs.k@freemail.hu</email>
+    </elérhetőség>
+</orvos>
+<orvos Oid="1102">
+    <név>Szűz Emilia</név>
+    <szakterület>Füll-Orr-gégész</szakterület>
+    <fizetés>950000</fizetés>
+    <elérhetőség>
+        <telefonszám>+36705555555</telefonszám>
+        <email>szuzemi@gmail.com</email>
+    </elérhetőség>
+</orvos>
+
+
+ </kórház>
