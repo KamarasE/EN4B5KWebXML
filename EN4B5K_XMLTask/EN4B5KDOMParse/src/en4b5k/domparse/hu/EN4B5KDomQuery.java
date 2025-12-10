@@ -97,7 +97,7 @@ public class EN4B5KDomQuery {
 			// Ciklus
 			for (int i = 0; i < orvosok.getLength(); i++) {
 				Element orvos = (Element) orvosok.item(i);
-				//Tanár órabérének hozzáadása az összeghez
+				//Orvos fizetésének hozzáadása az összeghez
 				Element wage = (Element) orvos.getElementsByTagName("fizetés").item(0);
 				wageSum += Integer.parseInt(wage.getTextContent().trim());
 			}
